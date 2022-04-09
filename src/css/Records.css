@@ -1,0 +1,72 @@
+#Records {
+  width: 100%;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+}
+.recorditem {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 30px;
+  font-display: flex;
+  justify-content: center;
+  background: #cfcfcf73;
+  box-shadow: 17px 17px 34px #a4a4a4, -17px -17px 34px #fafafa;
+}
+
+.recordtittle {
+  width: 100%;
+  text-align: start;
+  margin-bottom: 2rem;
+}
+.recordinfo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 2rem;
+}
+ .recordItems{
+  background-color: rgba(124, 115, 217, 0.387);
+  padding: 0.5rem 1rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset ;
+  margin-bottom: 2rem;
+}
+
+
+
+
+.recordinfoApp {
+  display: none;
+}
+
+@media (max-width: 565px) {
+  .recordtittle {
+    text-align: center;
+    padding: 0rem;
+  }
+  .recorditem {
+    padding: 0rem;
+    background: none;
+    box-shadow: none;
+  }
+  .card-title {
+    font-size: 12px !important;
+  }
+  .recordinfo {
+    display: none;
+  }
+  .recordinfoApp {
+    display: flex;
+    width: 100%;
+    line-height: 2.5rem;
+    flex-direction: column;
+  }
+  .recordinfoApp h4 {
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,416 @@
+#Sidebar {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  padding: 0.5rem;
+  flex-direction: column;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #ffffff, #8e9ec5);
+  box-shadow: 18px 18px 36px #999999, -18px -18px 36px #ffffff;
+  order: 1;
+  overflow: hidden;
+}
+.Myphoto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.myLogo{
+  display: none;
+}
+
+.blob {
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 48% 52% 68% 32%/42% 28% 72% 58%;
+  background: linear-gradient(
+    to right,
+    #23d5ab,
+    #23a6d5,
+    #e73c7e,
+    #ee7752,
+    #ddd6f3
+  );
+  background-size: 500% 100%;
+  animation: blobber 30s 0s linear infinite,
+    cobler 30s 0s linear infinite alternate;
+}
+
+#Sidebar .blob:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  left: -4px;
+  background-color: #000;
+  background-image: url(../img/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: multiply;
+  animation: blobber 30s 0s ease-in-out infinite,
+}
+
+@keyframes blobber {
+  0% {
+    border-radius: 48% 52% 68% 32%/42% 28% 72% 58%;
+  }
+
+  5% {
+    border-radius: 48% 52% 41% 59%/66% 37% 63% 34%;
+  }
+
+  10% {
+    border-radius: 69% 31% 71% 29%/67% 31% 69% 33%;
+  }
+
+  15% {
+    border-radius: 60% 40% 71% 29%/63% 65% 35% 37%;
+  }
+
+  20% {
+    border-radius: 61% 39% 51% 49%/57% 58% 42% 43%;
+  }
+
+  25% {
+    border-radius: 66% 34% 25% 75%/47% 30% 70% 53%;
+  }
+
+  30% {
+    border-radius: 32% 68% 38% 62%/65% 60% 40% 35%;
+  }
+
+  35% {
+    border-radius: 63% 37% 41% 59%/35% 38% 62% 65%;
+  }
+
+  40% {
+    border-radius: 57% 43% 49% 51%/55% 71% 29% 45%;
+  }
+
+  45% {
+    border-radius: 47% 53% 34% 66%/65% 36% 64% 35%;
+  }
+
+  50% {
+    border-radius: 44% 56% 32% 68%/69% 26% 74% 31%;
+  }
+
+  55% {
+    border-radius: 28% 72% 37% 63%/71% 44% 56% 29%;
+  }
+
+  60% {
+    border-radius: 38% 62% 35% 65%/74% 53% 47% 26%;
+  }
+
+  65% {
+    border-radius: 73% 27% 46% 54%/54% 47% 53% 46%;
+  }
+
+  70% {
+    border-radius: 75% 25% 47% 53%/49% 53% 47% 51%;
+  }
+
+  75% {
+    border-radius: 62% 38% 43% 57%/55% 60% 40% 45%;
+  }
+
+  80% {
+    border-radius: 41% 59% 65% 35%/73% 50% 50% 27%;
+  }
+
+  85% {
+    border-radius: 55% 45% 57% 43%/73% 61% 39% 27%;
+  }
+
+  90% {
+    border-radius: 74% 26% 33% 67%/40% 65% 35% 60%;
+  }
+
+  95% {
+    border-radius: 58% 42% 57% 43%/53% 45% 55% 47%;
+  }
+
+  100% {
+    border-radius: 48% 52% 68% 32%/42% 28% 72% 58%;
+  }
+}
+
+@keyframes cobler {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+@keyframes wobbler {
+  0% {
+    transform: rotateZ(8deg);
+  }
+
+  100% {
+    transform: rotateZ(-8deg);
+  }
+}
+
+.myname {
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 2.5rem;
+}
+.myApp {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0 1rem 0;
+  justify-content: space-evenly;
+}
+a {
+  text-decoration: none;
+}
+.hoverstyle:hover {
+  color: rgb(233, 119, 25);
+}
+
+.connectMe {
+  width: 100%;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.circle-wrapper {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin: 3px;
+}
+
+.icon {
+  position: absolute;
+  color: #fff;
+  font-size: 55px;
+  top: 21px;
+  left: 25px;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.circle {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  padding: 2.5px;
+  background-clip: content-box;
+  animation: spin 10s linear infinite;
+  cursor: pointer;
+}
+
+.circle-wrapper:active .circle {
+  animation: spin 2s linear infinite;
+}
+
+.success {
+  background-color: #f681e0;
+  border: 2.5px dashed #f681e0;
+}
+
+.gmail {
+  background-color: #fcba00;
+  border: 2.5px dashed #fcba00;
+}
+
+.warning {
+  background-color: #00b8f9;
+  border: 2.5px dashed #00b8f9;
+}
+.whats {
+  background-color: #32bf4c;
+  border: 2.5px dashed #32bf4c;
+}
+.youtube {
+  background-color: #ff4600;
+  border: 2.5px dashed #ff4600;
+}
+.Link {
+  background-color: #0044ff;
+  border: 2.5px dashed #0044ff;
+}
+.git {
+  background-color: #000000;
+  border: 2.5px dashed #000000;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.page-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ////////////////////////////////////////////btn/////////////////////////////////////////////////////////////////////////// */
+
+.connectMe .btn {
+  position: relative;
+  width: 155px;
+  height: 55px;
+  margin: 20px;
+}
+
+.connectMe .btn a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  color: #fff;
+  z-index: 1;
+  font-size: 400;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.5s;
+  backdrop-filter: blur(15px);
+}
+
+.connectMe .btn:hover a {
+  letter-spacing: 3px;
+}
+
+.connectMe .btn a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+  transform: skewX(45deg) translateX(0);
+  transition: 0.5s;
+}
+
+.connectMe .btn:hover a::before {
+  transform: skewX(45deg) translateX(200%);
+}
+.connectMe .btn::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  width: 30px;
+  height: 10px;
+  background: #f00;
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+.connectMe .btn:hover::before {
+  bottom: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: 0.5s;
+}
+
+.connectMe .btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -5px;
+  width: 30px;
+  height: 10px;
+  background: #f00;
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+.connectMe .btn:hover::after {
+  top: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: 0.5s;
+}
+
+.connectMe .btn:nth-child(1)::before,
+.connectMe .btn:nth-child(1)::after {
+  background: #ff1f71;
+  box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71,
+    0 0 60px #ff1f71;
+}
+
+.connectMe .btn:nth-child(2)::before,
+.connectMe .btn:nth-child(2)::after {
+  background: #2bd2ff;
+  box-shadow: 0 0 5px #2bd2ff, 0 0 15px #2bd2ff, 0 0 30px #2bd2ff,
+    0 0 60px #2bd2ff;
+}
+
+@media (max-width: 565px) {
+  #Sidebar {
+    width: 100%;
+    order: 1;
+    background: none;
+    box-shadow: none;
+    margin-top: -2rem;
+  }
+  .blob {
+    width: 200px;
+    height: 200px;
+    margin-top: 5rem;
+  }
+  .myname a {
+    display: none;
+  }
+  .circle-wrapper {
+    margin: 8px;
+  }
+  .myLogo{
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    position: relative;
+    margin-bottom: -5rem;
+    margin-top: 1rem;
+    padding: 0 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .myLogo img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+}

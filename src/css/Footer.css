@@ -1,0 +1,14 @@
+#footer{
+    width: 100%;
+    padding: 3rem;
+    margin-top: -3rem;
+    font-size: 10px;
+    color: rgb(117, 117, 117);
+}
+
+
+@media (max-width:565px){ 
+    #footer{
+      font-size: 10px;
+    }
+  }
