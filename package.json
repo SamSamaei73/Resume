@@ -24,6 +24,7 @@
     "react-switch-lang": "^1.0.2",
     "react-tooltip": "^4.2.21",
     "reactjs-popup": "^2.0.5",
+    "sass": "^1.50.0",
     "save": "^2.4.0",
     "styled-components": "^5.3.3",
     "use-slider": "^1.6.0",

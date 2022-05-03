@@ -97,7 +97,7 @@ const Sidebar = () => {
         <div className="circle-wrapper">
           <div className="youtube circle"></div>
           <div className="icon">
-            <a href="mailto:alireza.samaei73@gmail.com" data-tip={t('youtube')}>
+            <a href="https://www.youtube.com/channel/UCzatONZFJlDVRBOM9gB134Q" data-tip={t('youtube')}>
               <img src={youtube} alt="youtube"></img>
             </a>{' '}
           </div>
@@ -114,11 +114,7 @@ const Sidebar = () => {
       </div>
       <div className="connectMe">
         <div className="btn">
-          {/* <DownloadLink
-            label="دانلود"
-            filename="Coursera-responsive.pdf"
-            exportFile={() => '/src/img/Coursera-responsive.pdf'}
-          /> */}
+     
           <a
             data-tip={t('resumeDown')}
             href={Muresume}

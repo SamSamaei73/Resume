@@ -12,6 +12,8 @@ import Csharp from '../img/icons8-c-sharp-logo-96.png';
 import sql from '../img/icons8-sql-48.png';
 import sharepoint from '../img/icons8-microsoft-sharepoint-48.png';
 import webd from '../img/icons8-web-design-48.png';
+import sassp from '../img/icons8-sass-48.png';
+import figmas from '../img/icons8-figma-48.png';
 import ux from '../img/icons8-browser-48.png';
 import responsive from '../img/icons8-responsive-48.png';
 import seo from '../img/icons8-seo-48.png';
@@ -116,6 +118,36 @@ const Skills = () => {
                 className="progressBar react"
                 role="progressbar"
                 aria-valuenow="60"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+          <div className="item">
+            <div className="progressTittle">
+              <h4>60%</h4>
+              <label>Sass</label>
+            </div>
+            <div className="progress">
+              <div
+                className="progressBar sass"
+                role="progressbar"
+                aria-valuenow="60"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+          <div className="item">
+            <div className="progressTittle">
+              <h4>70%</h4>
+              <label>Figma</label>
+            </div>
+            <div className="progress">
+              <div
+                className="progressBar figma"
+                role="progressbar"
+                aria-valuenow="70"
                 aria-valuemin="0"
                 aria-valuemax="100"
               ></div>
@@ -264,6 +296,8 @@ const Skills = () => {
               </div>
             </CircularProgressbarWithChildren>
           </div>
+
+
           <div style={{ width: 100, height: 100, margin: '0.5rem' }}>
             <CircularProgressbarWithChildren value={85}>
               <img
@@ -276,6 +310,37 @@ const Skills = () => {
               </div>
             </CircularProgressbarWithChildren>
           </div>
+
+
+          <div style={{ width: 100, height: 100, margin: '0.5rem' }}>
+            <CircularProgressbarWithChildren value={60}>
+              <img
+                style={{ width: 40, marginTop: -5 }}
+                src={sassp}
+                alt="doge"
+              />
+              <div style={{ fontSize: 12, marginTop: 0 }}>
+                <strong>60%</strong>
+              </div>
+            </CircularProgressbarWithChildren>
+          </div>
+
+
+          <div style={{ width: 100, height: 100, margin: '0.5rem' }}>
+            <CircularProgressbarWithChildren value={70}>
+              <img
+                style={{ width: 40, marginTop: -5 }}
+                src={figmas}
+                alt="doge"
+              />
+              <div style={{ fontSize: 12, marginTop: 0 }}>
+                <strong>70%</strong>
+              </div>
+            </CircularProgressbarWithChildren>
+          </div>
+
+
+
           <div style={{ width: 100, height: 100, margin: '0.5rem' }}>
             <CircularProgressbarWithChildren value={30}>
               <img

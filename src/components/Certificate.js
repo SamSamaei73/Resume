@@ -4,6 +4,7 @@ import Respon from '../img/responsive.jpg';
 import solocss from '../img/css sololearn.jpg';
 import solohtml from '../img/html sololearn.jpg';
 import solojs from '../img/js sololearn.jpg';
+import ReactP from '../img/react.jpeg';
 import Sql from '../img/sql.jpeg';
 import WebRes from '../img/webRespo.jpeg';
 import { useTranslation } from 'react-i18next';
@@ -20,6 +21,7 @@ const Certificate = () => {
   const [Javascript, setJavascript] = useState(false);
   const [Sql1, setSql1] = useState(false);
   const [WebRes1, setWebRes1] = useState(false);
+  const [Reactc, setReactc] = useState(false);
 
   const popupCloseHandler = (e) => {
     setVisibility(e);
@@ -28,6 +30,7 @@ const Certificate = () => {
     setJavascript(e);
     setSql1(e);
     setWebRes1(e);
+    setReactc(e);
   };
   return (
     <div id="CertificateStyle">
@@ -115,6 +118,21 @@ const Certificate = () => {
              show={WebRes1}
            >
              <img src={WebRes} alt='responsive'/>
+                    </CustomPopup>
+
+
+
+          <div className="photoCrti ">
+            <img src={ReactP} alt="Avatar" className="solojs" />
+            <div className="overlay" onClick={(e) => setReactc(!Reactc)}>
+              <div className="text">React + Redux</div>
+            </div>
+          </div>
+          <CustomPopup
+             onClose={popupCloseHandler}
+             show={Reactc}
+           >
+             <img src={ReactP} alt='responsive'/>
                     </CustomPopup>
 
 

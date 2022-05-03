@@ -31,10 +31,10 @@
   border-radius: 48% 52% 68% 32%/42% 28% 72% 58%;
   background: linear-gradient(
     to right,
-    #23d5ab,
+    /* #23d5ab,
     #23a6d5,
     #e73c7e,
-    #ee7752,
+    #ee7752, */
     #ddd6f3
   );
   background-size: 500% 100%;
@@ -51,7 +51,7 @@
   bottom: 5px;
   left: -4px;
   background-color: #000;
-  background-image: url(../img/1.jpg);
+  background-image: url(../img/sss.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

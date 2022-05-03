@@ -18,13 +18,13 @@
   cursor: pointer;
   width: 20rem;
   height: 15rem;
-  margin: 1rem;
   display: flex;
   flex-direction: column;
   box-shadow: -14px -14px 28px #675252, 14px 14px 28px #d1a6a649;
   transition: 1s;
   transform-style: preserve-3d;
   transform: rotateY(30deg);
+  margin: 2rem 1rem;
 }
 .perspective {
   perspective: 850px;
